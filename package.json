@@ -1,0 +1,31 @@
+{
+  "name": "grunt-recap",
+  "version": "0.0.1",
+  "author": "aintgoin2goa",
+  "description": "creates responsive screenshots using phantomjs",
+  "main": "./src/main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aintgoin2goa/grunt-recap.git"
+  },
+  "keywords": [
+    "grunt",
+    "screenshot",
+    "responsive",
+    "phantomjs",
+    "workflow"
+  ],
+  "dependencies": {
+      "recap" : "0.1.X"
+  },
+  "analyze": false,
+  "devDependencies": {
+    "grunt": "0.4.1",
+  },
+  "bundledDependencies": [
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10"
+  },
+}
