@@ -17,20 +17,35 @@ module.exports = function(grunt) {
 
     var done = this.async();
 
-    this.requiresConfig("urls", "dest", "widths");
-
     // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({
       waitTime: 50,
       crawl: false
     });
 
-    var data = this.data;
+    var urls = this.data.urls,
+        widths = this.data.widths,
+        dest = this.data.dest;
+
+    if(!urls){
+      grunt.fail.warn("urls not specified", 3);
+      return;
+    } 
+
+    if(!widths){
+      grunt.fail.warn("widths not specified", 3);
+      return;
+    }
+
+    if(!dest){
+      grunt.fail.warn("dest not specified", 3);
+      return;
+    }      
 
     var config =  {
-      urls : data.urls,
-      widths : data.widths,
-      dest : data.dest,
+      urls : urls,
+      widths : widths,
+      dest : dest,
       options : options
     };
 

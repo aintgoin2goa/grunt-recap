@@ -33,7 +33,7 @@ module.exports = function(grunt) {
       basic : {
         urls : ["http://www.datsun.com/"],
         widths : ["320", "480", "1024", "1900"],
-        dest : "./screenshots/",
+        dest : "./screenshots1/",
         options : {
           waitTime : 50
         }
@@ -41,7 +41,7 @@ module.exports = function(grunt) {
       crawl : {
         urls : ["http://www.datsun.com/"],
         widths : ["320", "480", "1024", "1900"],
-        dest : "./screenshots/",
+        dest : "./screenshots2/",
         options : {
           waitTime : 50,
           crawl : true
