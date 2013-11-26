@@ -1,31 +1,47 @@
 {
   "name": "grunt-recap",
-  "version": "0.0.1",
-  "author": "aintgoin2goa",
-  "description": "creates responsive screenshots using phantomjs",
-  "main": "./src/main.js",
+  "description": "Creates screenshots or responsive sites at different widths",
+  "version": "0.1.0",
+  "homepage": "https://github.com/aintgoin2goa/grunt-recap",
+  "author": {
+    "name": "Paul Wilson",
+    "email": "paul.wilson66@gmail.com"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/aintgoin2goa/grunt-recap.git"
   },
-  "keywords": [
-    "grunt",
-    "screenshot",
-    "responsive",
-    "phantomjs",
-    "workflow"
-  ],
-  "dependencies": {
-      "recap" : "0.1.X"
+  "bugs": {
+    "url": "https://github.com/aintgoin2goa/grunt-recap/issues"
   },
-  "analyze": false,
-  "devDependencies": {
-    "grunt": "0.4.1",
-  },
-  "bundledDependencies": [
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/aintgoin2goa/grunt-recap/blob/master/LICENSE-MIT"
+    }
   ],
-  "license": "MIT",
+  "main": "Gruntfile.js",
   "engines": {
-    "node": ">=0.10"
+    "node": ">= 0.8.0"
   },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies" : {
+      "recap" : "0.2.X"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt": "~0.4.2"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.2"
+  },
+  "keywords": [
+    "gruntplugin",
+    "screenshots",
+    "responsive"
+  ]
 }
