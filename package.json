@@ -1,7 +1,7 @@
 {
   "name": "grunt-recap",
   "description": "Creates screenshots or responsive sites at different widths",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "homepage": "https://github.com/aintgoin2goa/grunt-recap",
   "author": {
     "name": "Paul Wilson",
@@ -27,8 +27,8 @@
   "scripts": {
     "test": "grunt test"
   },
-  "dependencies" : {
-      "recap" : "0.3.X"
+  "dependencies": {
+    "recap": "0.3.X"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.6.0",
