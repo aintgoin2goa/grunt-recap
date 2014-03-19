@@ -28,7 +28,7 @@
     "test": "grunt test"
   },
   "dependencies" : {
-      "recap" : "0.2.X"
+      "recap" : "0.3.X"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.6.0",

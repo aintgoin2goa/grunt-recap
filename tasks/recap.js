@@ -20,7 +20,8 @@ module.exports = function(grunt) {
     // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({
       waitTime: 50,
-      crawl: false
+      crawl: false,
+      script: null
     });
 
     var urls = this.data.urls,
@@ -49,7 +50,26 @@ module.exports = function(grunt) {
       options : options
     };
 
-    require("recap").run(config).then(
+    var recap = require("recap");
+
+    recap.on("console", function(type, message){
+          switch(type){
+            case "error":
+                grunt.log.error(message);
+                break;
+            case "success":
+                grunt.log.success(message);
+                break;
+            case "log" : 
+                grunt.verbose.writeln(message);
+                break;
+            default :
+                grunt.log.writeln;
+                break;
+          }
+    });
+
+    recap.run(config).then(
         function(msg){
            grunt.log.ok(msg);
            done();
